@@ -10,17 +10,17 @@
 
 <body>
 
-  <header class="header">
+  <header class="header header-page">
     <div class="container">
       <div class="header-top">
         <ul class="header-top__list">
           <li class="header-top__item">
-            <a class="header-top__link header-top__link-home" href="#">HOME</a>
+            <a class="header-top__link header-top__link-home" href="index.html">HOME</a>
           </li>
           <li class="header-top__item">
             <a class="header-top__link header-top__link-phone" href="tel:+80068391800">+800-683-918-00</a>
           </li>
-          <li class="header-top__item header-top__item-adress">
+          <li class="header-top__item">
             <a class="header-top__link header-top__link-adress" href="#">г. Киев, пр. Метростроителей, 58/54, ТРК
               "Украина"</a>
           </li>
@@ -31,16 +31,33 @@
           Restaurant
         </h1>
         <div class="header-content__item">
-
-          <div class="header-content__item-box">
-            <div class="header-content__item-inner">
-              <h4 class="header-content__item-title">Breakfast from</h4>
-              <p class="header-content__item-text">with overflowing coffee</p>
-            </div>
-            <span class="header-content__item-price">10</span>
-          </div>
+          <button class="header__menu-btn">
+            <span></span>
+          </button>
+          <ul class="header-content__menu">
+            <li class="header-content__menu-item">
+              <a class="header-content__menu-link" href="entree.html">
+                { Entree }
+              </a>
+            </li>
+            <li class="header-content__menu-item">
+              <a class="header-content__menu-link" href="main.html">
+                { Main Course }
+              </a>
+            </li>
+            <li class="header-content__menu-item">
+              <a class="header-content__menu-link" href="desserts.html">
+                { Dessert }
+              </a>
+            </li>
+            <li class="header-content__menu-item">
+              <a class="header-content__menu-link" href="drinks.html">
+                { Drinks }
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="header-content__img">
+        <div class="header-content__img header-content__img-page">
           <img class="heder-img" src="images/schedule.gif" alt="time of worc">
         </div>
       </div>
@@ -48,27 +65,45 @@
   </header>
 
   <main class="main">
-    <section class="products">
+    <section class="menu-composition">
       <div class="container">
-        <div class="products__images">
-          <div class="products__images-one">
-            <a class="products__images-link products__main" href="main.html">
-              <img class="products__img-main" src="images/main.png" alt="">
-              </a>
-            <a class="products__images-link products__drinks" href="drinks.html">
-              <img class="products__img-drinks" src="images/drinks.png" alt="">
-            </a>
+        <h4 class="menu-composition__title booking-form__title">{ Забронируйте мероприятие }</h4>
+        <form class="booking-form" action="#">
+          <div class="booking-form__top">
+            <label class="booking__label">
+              <span class="booking__span"> Ваше имя</span>
+              <input class="booking__input-name" type="text" required>
+            </label>
+            <label class="booking__label">
+              Ваш Email
+              <input class="booking__input-mail" type="text" required>
+            </label>
           </div>
-          <div class="products__images-two">
-            <a class="products__images-link products__entree" href="entree.html">
-              <img class="products__img-entree" src="images/entree.png" alt="">
-              </a>
-            <a class="products__images-link products__desserts" href="desserts.html">
-              <img class="products__img-desserts" src="images/desserts.png" alt="">
-            </a>
+          <div class="booking-form__medium">
+            <label class="booking__label">
+              Дата
+              <input class="booking__input-date" type="date">
+            </label>
+            <label class="booking__label">
+              Количество людей
+              <input class="booking__input-nmb" type="text">
+            </label>
+            <label class="booking__label-checkbox">
+              Предпочтение комнаты
+              <div class="booking__box-checkbox">
+                <input class="booking__input-checkbox" type="checkbox">
+                Открытая площадка
+                <input class="booking__input-checkbox" type="checkbox">
+                В помещении
+              </div>
+            </label>
           </div>
-        </div>
-      </div>
+          <label class="booking__label">
+            Это особый случай? Расскажите, пожалуйста, здесь?
+            <textarea class="booking__textarea"></textarea>
+          </label>
+          <input class="button" type="submit" value="Отправить">
+        </form>
       </div>
     </section>
   </main>
@@ -78,8 +113,8 @@
       <div class="footer-top">
         <div class="footer-top__item">
           <h4 class="footer-top__item-title">Hungry? We Deliver</h4>
-          <a href="main.html">
-            <p class="footer-top__item-text footer-top__item-textone">Download <br> our Menu</p>
+          <a href="#">
+            <p class="footer-top__item-text">Download our Menu</p>
           </a>
         </div>
         <div class="footer-top__item">
@@ -106,7 +141,7 @@
             <a class="footer-bottom__link" href="index.html">Home</a>
           </li>
           <li class="footer-bottom__item">
-            <a class="footer-bottom__link" href="book.html">Book An Event</a>
+            <a class="footer-bottom__link" href="#">Book An Event</a>
           </li>
           <li class="footer-bottom__item">
             <a class="footer-bottom__link" href="blog.html">Blog</a>

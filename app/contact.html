@@ -10,17 +10,17 @@
 
 <body>
 
-  <header class="header">
+  <header class="header header-page">
     <div class="container">
       <div class="header-top">
         <ul class="header-top__list">
           <li class="header-top__item">
-            <a class="header-top__link header-top__link-home" href="#">HOME</a>
+            <a class="header-top__link header-top__link-home" href="index.html">HOME</a>
           </li>
           <li class="header-top__item">
             <a class="header-top__link header-top__link-phone" href="tel:+80068391800">+800-683-918-00</a>
           </li>
-          <li class="header-top__item header-top__item-adress">
+          <li class="header-top__item">
             <a class="header-top__link header-top__link-adress" href="#">г. Киев, пр. Метростроителей, 58/54, ТРК
               "Украина"</a>
           </li>
@@ -31,16 +31,33 @@
           Restaurant
         </h1>
         <div class="header-content__item">
-
-          <div class="header-content__item-box">
-            <div class="header-content__item-inner">
-              <h4 class="header-content__item-title">Breakfast from</h4>
-              <p class="header-content__item-text">with overflowing coffee</p>
-            </div>
-            <span class="header-content__item-price">10</span>
-          </div>
+          <button class="header__menu-btn">
+            <span></span>
+          </button>
+          <ul class="header-content__menu">
+            <li class="header-content__menu-item">
+              <a class="header-content__menu-link" href="entree.html">
+                { Entree }
+              </a>
+            </li>
+            <li class="header-content__menu-item">
+              <a class="header-content__menu-link" href="main.html">
+                { Main Course }
+              </a>
+            </li>
+            <li class="header-content__menu-item">
+              <a class="header-content__menu-link" href="desserts.html">
+                { Dessert }
+              </a>
+            </li>
+            <li class="header-content__menu-item">
+              <a class="header-content__menu-link" href="drinks.html">
+                { Drinks }
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="header-content__img">
+        <div class="header-content__img header-content__img-page">
           <img class="heder-img" src="images/schedule.gif" alt="time of worc">
         </div>
       </div>
@@ -48,26 +65,40 @@
   </header>
 
   <main class="main">
-    <section class="products">
+    <section class="menu-composition">
       <div class="container">
-        <div class="products__images">
-          <div class="products__images-one">
-            <a class="products__images-link products__main" href="main.html">
-              <img class="products__img-main" src="images/main.png" alt="">
-              </a>
-            <a class="products__images-link products__drinks" href="drinks.html">
-              <img class="products__img-drinks" src="images/drinks.png" alt="">
-            </a>
+        <h4 class="menu-composition__title">{ Контакты }</h4>
+        <p class="blog__text contact__text">
+          Нам важно мнение каждого из вас! Наша компания внимательно изучает пожелания и потребности наших клиентов.
+          Если у Вас возникла необходимость установить контакт с нами. Всегда будем рады! Наши специалисты ответят на Б
+          возникшие вопросы и предложат оптимальное решение.
+        </p>
+        <div class="contact__form">
+
+          <div class="contact__item">
+            <p class="contact__email">EMAIL</p>
+            <span class="contact__span">:</span>
+            <p class="contact__email">RESTAURANT@EMAIL.COM</p>
           </div>
-          <div class="products__images-two">
-            <a class="products__images-link products__entree" href="entree.html">
-              <img class="products__img-entree" src="images/entree.png" alt="">
-              </a>
-            <a class="products__images-link products__desserts" href="desserts.html">
-              <img class="products__img-desserts" src="images/desserts.png" alt="">
-            </a>
+
+          <div class="contact__item">
+            <p class="contact__email contact__address">АДРЕСС</p>
+            <span class="contact__span">:</span>
+            <p class="contact__email contact__address">
+              г. Киев, пр. Метростроителей, 58/54, ТРК "Украина"
+            </p>
           </div>
+
+          <div class="contact__item">
+            <p class="contact__email contact__phone">ТЕЛЕФОН</p>
+            <span class="contact__span">:</span>
+            <p class="contact__email contact__address">
+              0800-683-918-00
+            </p>
+          </div>
+
         </div>
+
       </div>
       </div>
     </section>
@@ -78,8 +109,8 @@
       <div class="footer-top">
         <div class="footer-top__item">
           <h4 class="footer-top__item-title">Hungry? We Deliver</h4>
-          <a href="main.html">
-            <p class="footer-top__item-text footer-top__item-textone">Download <br> our Menu</p>
+          <a href="#">
+            <p class="footer-top__item-text">Download our Menu</p>
           </a>
         </div>
         <div class="footer-top__item">
@@ -115,7 +146,7 @@
             <a class="footer-bottom__link" href="about.html">About</a>
           </li>
           <li class="footer-bottom__item">
-            <a class="footer-bottom__link" href="contact.html">Contact</a>
+            <a class="footer-bottom__link" href="#">Contact</a>
           </li>
         </ul>
         <div class="footer-bottom__copy">
